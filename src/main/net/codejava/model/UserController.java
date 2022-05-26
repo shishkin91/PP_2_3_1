@@ -31,7 +31,7 @@ public class UserController {
     public String newCustomerForm(Map<String, Object> model) {
         User user = new User();
         model.put("user", user);
-        return "new_customer";
+        return "new_user";
     }
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public String saveCustomer(@ModelAttribute("user") User user) {
@@ -40,9 +40,9 @@ public class UserController {
     }
     @RequestMapping("/edit")
     public ModelAndView editCustomerForm(@RequestParam long id) {
-        ModelAndView mav = new ModelAndView("edit_customer");
+        ModelAndView mav = new ModelAndView("edit_user");
         User user = userService.get(id);
-        mav.addObject("customer", user);
+        mav.addObject("user", user);
 
         return mav;
     }
