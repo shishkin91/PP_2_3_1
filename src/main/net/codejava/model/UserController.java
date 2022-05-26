@@ -1,6 +1,5 @@
-package main.net.codejava.customer;
+package main.net.codejava.model;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,43 +12,43 @@ import java.util.Map;
 
 
 @Controller
-public class CustomerController {
+public class UserController {
 
-    private final CustomerService customerService;
+    private final UserService userService;
 
-    public CustomerController(CustomerService customerService) {
-        this.customerService = customerService;
+    public UserController(UserService userService) {
+        this.userService = userService;
     }
 
     @RequestMapping("/")
     public ModelAndView home() {
-        List<Customer> listCustomer = customerService.listAll();
+        List<User> listUser = userService.listAll();
         ModelAndView mav = new ModelAndView("index");
-        mav.addObject("listCustomer", listCustomer);
+        mav.addObject("listUser", listUser);
         return mav;
     }
     @RequestMapping("/new")
     public String newCustomerForm(Map<String, Object> model) {
-        Customer customer = new Customer();
-        model.put("customer", customer);
+        User user = new User();
+        model.put("user", user);
         return "new_customer";
     }
     @RequestMapping(value = "/save", method = RequestMethod.POST)
-    public String saveCustomer(@ModelAttribute("customer") Customer customer) {
-        customerService.save(customer);
+    public String saveCustomer(@ModelAttribute("user") User user) {
+        userService.save(user);
         return "redirect:/";
     }
     @RequestMapping("/edit")
     public ModelAndView editCustomerForm(@RequestParam long id) {
         ModelAndView mav = new ModelAndView("edit_customer");
-        Customer customer = customerService.get(id);
-        mav.addObject("customer", customer);
+        User user = userService.get(id);
+        mav.addObject("customer", user);
 
         return mav;
     }
     @RequestMapping("/delete")
     public String deleteCustomerForm(@RequestParam long id) {
-        customerService.delete(id);
+        userService.delete(id);
         return "redirect:/";
     }
 }

@@ -7,12 +7,12 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>New Customer</title>
+    <title>New user</title>
 </head>
 <body>
 <div align="center">
-    <h2>New Customer</h2>
-    <form:form action="save" method="post" modelAttribute="customer">
+    <h2>New user</h2>
+    <form:form action="save" method="post" modelAttribute="user">
         <table border="0" cellpadding="5">
             <tr>
                 <td>Name: </td>

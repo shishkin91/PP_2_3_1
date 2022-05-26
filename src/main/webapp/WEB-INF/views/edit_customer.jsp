@@ -7,16 +7,16 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Edit Customer</title>
+    <title>Edit user</title>
 </head>
 <body>
 <div align="center">
-    <h2>Edit Customer</h2>
+    <h2>Edit user</h2>
     <form:form action="save" method="post" modelAttribute="customer">
         <table border="0" cellpadding="5">
             <tr>
                 <td>ID: </td>
-                <td>${customer.id}
+                <td>${user.id}
                     <form:hidden path="id"/>
                 </td>
             </tr>

@@ -1,4 +1,4 @@
-package main.net.codejava.customer;
+package main.net.codejava.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Customer {
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -15,10 +15,10 @@ public class Customer {
     private String email;
     private String address;
 
-    protected Customer() {
+    protected User() {
     }
 
-    protected Customer(String name, String email, String address) {
+    protected User(String name, String email, String address) {
         this.name = name;
         this.email = email;
         this.address = address;

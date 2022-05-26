@@ -7,16 +7,12 @@ Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>Customer Manager</title>
+    <title>User Manager</title>
 </head>
 <body>
 <div align="center">
-    <h2>Customer Manager</h2>
-    <form method="get" action="search">
-        <input type="text" name="keyword" />
-        <input type="submit" value="Search" />
-    </form>
-    <h3><a href="/new">New Customer</a></h3>
+    <h2>User Manager</h2>
+    <h3><a href="/new">New User</a></h3>
     <table border="1" cellpadding="5">
         <tr>
             <th>ID</th>
@@ -25,16 +21,16 @@ Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
             <th>Address</th>
             <th>Action</th>
         </tr>
-        <c:forEach items="${listCustomer}" var="customer">
+        <c:forEach items="${listUser}" var="user">
             <tr>
-                <td>${customer.id}</td>
-                <td>${customer.name}</td>
-                <td>${customer.email}</td>
-                <td>${customer.address}</td>
+                <td>${user.id}</td>
+                <td>${user.name}</td>
+                <td>${user.email}</td>
+                <td>${user.address}</td>
                 <td>
-                    <a href="/edit?id=${customer.id}">Edit</a>
+                    <a href="/edit?id=${user.id}">Edit</a>
 
-                    <a href="/delete?id=${customer.id}">Delete</a>
+                    <a href="/delete?id=${user.id}">Delete</a>
                 </td>
             </tr>
         </c:forEach>

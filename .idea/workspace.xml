@@ -9,12 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44afbcc7-d4de-42e4-90d6-3b09b842bec7" name="Changes" comment="commit 2">
+    <list default="true" id="44afbcc7-d4de-42e4-90d6-3b09b842bec7" name="Changes" comment="commit 3">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/net/codejava/model/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/net/codejava/config/JpaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/net/codejava/config/JpaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/net/codejava/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/net/codejava/customer/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/net/codejava/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/net/codejava/customer/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/net/codejava/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/net/codejava/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/net/codejava/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/net/codejava/model/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/net/codejava/customer/CustomerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/net/codejava/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/net/codejava/model/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/edit_customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/edit_customer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/new_customer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/new_customer.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +199,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1653572501398</updated>
-      <workItem from="1653572502779" duration="12165000" />
+      <workItem from="1653572502779" duration="13306000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1653588343816</created>
@@ -209,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653590424746</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit 3">
+      <created>1653591948402</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653591948402</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +242,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="commit 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 2" />
+    <MESSAGE value="commit 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 3" />
   </component>
 </project>
