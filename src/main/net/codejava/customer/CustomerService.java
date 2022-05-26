@@ -9,8 +9,12 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @Transactional
 public class CustomerService {
-    @Autowired
+    final
     CustomerRepository repo;
+
+    public CustomerService(CustomerRepository repo) {
+        this.repo = repo;
+    }
 
     public void save(Customer customer) {
         repo.save(customer);
