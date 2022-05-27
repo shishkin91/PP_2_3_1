@@ -1,4 +1,4 @@
-package main.net.codejava.config;
+package main.config;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;

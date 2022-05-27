@@ -1,17 +1,18 @@
-package main.net.codejava.model;
+package main.service;
 
 import java.util.List;
 
+import main.model.User;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @Transactional
-public class UserService {
+public class UserServiceImp {
     final
-    UserRepository repo;
+    UserService repo;
 
-    public UserService(UserRepository repo) {
+    public UserServiceImp(UserService repo) {
         this.repo = repo;
     }
 

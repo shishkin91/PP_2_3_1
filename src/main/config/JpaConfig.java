@@ -1,4 +1,4 @@
-package main.net.codejava.config;
+package main.config;
 
 import javax.sql.DataSource;
 
@@ -17,7 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import java.util.Properties;
 
 @Configuration
-@EnableJpaRepositories(basePackages = {"main.net.codejava.model"})
+@EnableJpaRepositories(basePackages = {"main"})
 @EnableTransactionManagement
 public class JpaConfig {
     @Bean
@@ -58,7 +58,7 @@ public class JpaConfig {
         LocalContainerEntityManagerFactoryBean em
                 = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource());
-        em.setPackagesToScan(new String[] { "main.net.codejava.model" });
+        em.setPackagesToScan(new String[] { "main" });
 
         JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
         em.setJpaVendorAdapter(vendorAdapter);
@@ -67,19 +67,4 @@ public class JpaConfig {
         return em;
     }
 
-//    @Bean
-//    public LocalEntityManagerFactoryBean entityManagerFactory() {
-//        LocalEntityManagerFactoryBean factoryBean = new LocalEntityManagerFactoryBean();
-//        factoryBean.setPersistenceUnitName("PP");
-//
-//        return factoryBean;
-//    }
-
-//    @Bean
-//    public JpaTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) {
-//        JpaTransactionManager transactionManager = new JpaTransactionManager();
-//        transactionManager.setEntityManagerFactory(entityManagerFactory);
-//
-//        return transactionManager;
-//    }
 }

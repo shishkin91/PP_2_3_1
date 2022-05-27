@@ -1,4 +1,4 @@
-package main.net.codejava.model;
+package main.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,7 +15,7 @@ public class User {
     private String email;
     private String address;
 
-    protected User() {
+    public User() {
     }
 
     protected User(String name, String email, String address) {

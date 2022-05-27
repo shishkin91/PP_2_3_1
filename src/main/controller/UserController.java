@@ -1,5 +1,7 @@
-package main.net.codejava.model;
+package main.controller;
 
+import main.model.User;
+import main.service.UserServiceImp;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,15 +16,15 @@ import java.util.Map;
 @Controller
 public class UserController {
 
-    private final UserService userService;
+    private final UserServiceImp repo;
 
-    public UserController(UserService userService) {
-        this.userService = userService;
+    public UserController(UserServiceImp repo) {
+        this.repo = repo;
     }
 
     @RequestMapping("/")
     public ModelAndView home() {
-        List<User> listUser = userService.listAll();
+        List<User> listUser = repo.listAll();
         ModelAndView mav = new ModelAndView("index");
         mav.addObject("listUser", listUser);
         return mav;
@@ -35,20 +37,20 @@ public class UserController {
     }
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public String saveCustomer(@ModelAttribute("user") User user) {
-        userService.save(user);
+        repo.save(user);
         return "redirect:/";
     }
     @RequestMapping("/edit")
     public ModelAndView editCustomerForm(@RequestParam long id) {
         ModelAndView mav = new ModelAndView("edit_user");
-        User user = userService.get(id);
+        User user = repo.get(id);
         mav.addObject("user", user);
 
         return mav;
     }
     @RequestMapping("/delete")
     public String deleteCustomerForm(@RequestParam long id) {
-        userService.delete(id);
+        repo.delete(id);
         return "redirect:/";
     }
 }
