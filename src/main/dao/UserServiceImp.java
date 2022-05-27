@@ -1,8 +1,9 @@
-package main.service;
+package main.dao;
 
 import java.util.List;
 
 import main.model.User;
+import main.service.UserService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

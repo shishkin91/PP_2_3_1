@@ -1,7 +1,7 @@
 package main.controller;
 
 import main.model.User;
-import main.service.UserServiceImp;
+import main.dao.UserServiceImp;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
