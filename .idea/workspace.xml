@@ -9,15 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44afbcc7-d4de-42e4-90d6-3b09b842bec7" name="Changes" comment="commit 5">
+    <list default="true" id="44afbcc7-d4de-42e4-90d6-3b09b842bec7" name="Changes" comment="commit 7">
+      <change afterPath="$PROJECT_DIR$/src/main/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/dao/UserDaoImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/net/codejava/config/JpaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/config/JpaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/net/codejava/config/WebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/config/WebAppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/net/codejava/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/net/codejava/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/net/codejava/model/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/net/codejava/model/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/net/codejava/model/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/service/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/dao/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/service/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -200,7 +198,7 @@
       <workItem from="1653572502779" duration="13446000" />
       <workItem from="1653593253731" duration="219000" />
       <workItem from="1653593484729" duration="1217000" />
-      <workItem from="1653637832351" duration="1193000" />
+      <workItem from="1653637832351" duration="3350000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1653588343816</created>
@@ -237,7 +235,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653594067627</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit 6">
+      <created>1653639092015</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653639092015</updated>
+    </task>
+    <task id="LOCAL-00007" summary="commit 7">
+      <created>1653639183543</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1653639183543</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,6 +272,8 @@
     <MESSAGE value="commit 3" />
     <MESSAGE value="commit 4" />
     <MESSAGE value="commit 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 5" />
+    <MESSAGE value="commit 6" />
+    <MESSAGE value="commit 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 7" />
   </component>
 </project>

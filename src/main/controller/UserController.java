@@ -1,7 +1,10 @@
 package main.controller;
 
 import main.model.User;
-import main.dao.UserServiceImp;
+import main.service.UserService;
+import main.service.UserServiceImp;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,15 +19,17 @@ import java.util.Map;
 @Controller
 public class UserController {
 
-    private final UserServiceImp repo;
 
-    public UserController(UserServiceImp repo) {
-        this.repo = repo;
+    @Autowired
+    private final UserService imp;
+
+    public UserController(UserService imp) {
+        this.imp = imp;
     }
 
     @RequestMapping("/")
     public ModelAndView home() {
-        List<User> listUser = repo.listAll();
+        List<User> listUser = imp.listAll();
         ModelAndView mav = new ModelAndView("index");
         mav.addObject("listUser", listUser);
         return mav;
@@ -37,20 +42,20 @@ public class UserController {
     }
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public String saveCustomer(@ModelAttribute("user") User user) {
-        repo.save(user);
+        imp.save(user);
         return "redirect:/";
     }
     @RequestMapping("/edit")
     public ModelAndView editCustomerForm(@RequestParam long id) {
         ModelAndView mav = new ModelAndView("edit_user");
-        User user = repo.get(id);
+        User user = imp.get(id);
         mav.addObject("user", user);
 
         return mav;
     }
     @RequestMapping("/delete")
     public String deleteCustomerForm(@RequestParam long id) {
-        repo.delete(id);
+        imp.delete(id);
         return "redirect:/";
     }
 }
