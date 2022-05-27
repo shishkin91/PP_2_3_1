@@ -28,7 +28,7 @@ public class JpaConfig {
         dataSource.setUsername("root");
         dataSource.setPassword("root");
         dataSource.setUrl(
-                "jdbc:mysql://localhost:3306/pre_project?serverTimezone=UTC&createDatabaseIfNotExist=true");
+                "jdbc:mysql://localhost:3306/pre_project?serverTimezone=UTC&createDatabaseIfNotExist=true&useSSL=false");
         return dataSource;
     }
     @Bean
