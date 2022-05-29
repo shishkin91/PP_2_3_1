@@ -12,29 +12,29 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public class UserServiceImp implements UserService{
     @Autowired
-    private final UserDao repo;
+    private final UserDao userDao;
 
-    public UserServiceImp(UserDao repo) {
-        this.repo = repo;
+    public UserServiceImp(UserDao userDao) {
+        this.userDao = userDao;
     }
 
     @Override
     public void save(User user) {
-        repo.save(user);
+        userDao.save(user);
     }
 
     @Override
     public List<User> listAll() {
-        return (List<User>) repo.findAll();
+        return (List<User>) userDao.findAll();
     }
 
     @Override
     public User get(Long id) {
-        return repo.findById(id).get();
+        return userDao.findById(id).get();
     }
 
     @Override
     public void delete(Long id) {
-        repo.deleteById(id);
+        userDao.deleteById(id);
     }
 }
