@@ -10,11 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44afbcc7-d4de-42e4-90d6-3b09b842bec7" name="Changes" comment="commit 9">
-      <change afterPath="$PROJECT_DIR$/src/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/config/JpaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/config/JpaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/service/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/service/UserServiceImp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,36 +65,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "spring.configuration.checksum": "3cbaa52f6d03d6957d8781b3433d796e",
-    "sql.rename.search.for.storage.occurrences": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3cbaa52f6d03d6957d8781b3433d796e&quot;,
+    &quot;sql.rename.search.for.storage.occurrences&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\vital\IdeaProjects\PP_2_3_1\src" />
+      <recent name="C:\Users\vital\IdeaProjects\PP_2_3_1" />
       <recent name="C:\Users\vital\IdeaProjects\PP_2_3_1\META-INF" />
       <recent name="C:\Users\vital\IdeaProjects\PP_2_3_1\src\main\net\codejava\config" />
       <recent name="C:\Users\vital\IdeaProjects\PP_2_3_1\src\META-INF" />
-      <recent name="C:\Users\vital\IdeaProjects\PP_2_3_1\src\main\net\codejava\customer" />
     </key>
   </component>
   <component name="RunManager">
@@ -204,6 +203,7 @@
       <workItem from="1653675649428" duration="1776000" />
       <workItem from="1653677886536" duration="1246000" />
       <workItem from="1653811987990" duration="2106000" />
+      <workItem from="1653902319086" duration="939000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1653588343816</created>
